@@ -1,0 +1,40 @@
+.cart-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item {
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.25rem;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.cart-item-quantity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cart-item-quantity span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item-quantity button {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.subtract:hover {
+  background-color: red;
+  font-weight: bold;
+}
+
+.add:hover {
+  background-color: green;
+  font-weight: bold;
+}
