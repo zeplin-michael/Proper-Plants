@@ -5,9 +5,9 @@ import "./ShoppingList.css";
 
 export default function ShoppingList({ addToCart, subtractFromCart }) {
   return (
-    <div className="plants">
+    <div>
       <h2>Plants</h2>
-      <ul className="plants">
+      <ul className="shopping-list">
         {PLANTS.map((plant) => (
           <ShoppingCard
             addToCart={addToCart}
